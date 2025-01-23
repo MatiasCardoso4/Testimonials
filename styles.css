@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.cards>.cards-wrapper {
+  display: flex;
+  width: 60vw;
+}
+
+.cards>.cards-wrapper>li {
+  list-style: none;
+  width: 50%;
+}
+
+.cards>.cards-wrapper>.card:first-child {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.cards>.cards-wrapper>.first-card {
+  display: flex;
+  width: max-content;
+  position: relative;
+}
+
+.cards>.cards-wrapper>.first-card>blockquote {
+  background-color: black;
+  padding: 22px;
+  border-radius: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  line-height: 26px;
+  width: max-content;
+}
+
+.cards>.cards-wrapper>.first-card::before{
+  content:'';
+  position: absolute;
+  bottom: 86px;
+  left: 35px;
+  background-color: black;
+  width: 30px;
+  height: 14px;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  transform: rotate(180deg);
+}
+
+.cards>.cards-wrapper>.first-card>blockquote>p {
+  width: 18vw;
+  color: white;
+  font-size: 22px;
+}
+
+.cards>.cards-wrapper>.card .first-user-info>img {
+  width: 82px;
+  height: 82px;
+  border-radius: 50%;
+}
+
+.cards>.cards-wrapper>.card .first-user-info {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.cards>.cards-wrapper>.card>.first-user-info>.user-info-text p:first-child {
+  font-size: 24px;
+}
+
+.cards>.cards-wrapper>.card>.first-user-info>.user-info-text p:last-child {
+  font-size: 18px;
+}
