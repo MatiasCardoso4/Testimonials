@@ -18,14 +18,23 @@ body {
 }
 
 
+.cards-container>.cards {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 .cards>.cards-wrapper {
   display: flex;
+  justify-content: center;
+  gap: 40px;
   width: 60vw;
 }
 
 .cards>.cards-wrapper>li {
   list-style: none;
-  width: 50%;
 }
 
 .cards>.cards-wrapper>.card:first-child {
@@ -51,10 +60,10 @@ body {
   width: max-content;
 }
 
-.cards>.cards-wrapper>.first-card::before{
-  content:'';
+.cards>.cards-wrapper>.first-card::before {
+  content: '';
   position: absolute;
-  bottom: 86px;
+  bottom: 88px;
   left: 35px;
   background-color: black;
   width: 30px;
@@ -88,4 +97,85 @@ body {
 
 .cards>.cards-wrapper>.card>.first-user-info>.user-info-text p:last-child {
   font-size: 18px;
+}
+
+.cards>.cards-wrapper>.card:last-child {
+  display: flex;
+  flex-direction: column;
+}
+
+.cards>.cards-wrapper>.card>.second-user-info>img {
+  width: 82px;
+  height: 82px;
+  border-radius: 50%;
+}
+
+.cards>.cards-wrapper>.second-card {
+  width: 22vw;
+  border: 2px solid black;
+  border-radius: 22px;
+}
+
+.cards>.cards-wrapper>.second-card>blockquote {
+  padding: 22px;
+  border-radius: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  line-height: 28px;
+  width: 22vw;
+  color: black;
+  font-size: 24px;
+}
+
+.cards>.cards-wrapper>.second-card>.second-user-info {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin-left: 22px;
+}
+
+.cards>.cards-wrapper>.second-card>.second-user-info>.user-info-text p:first-child {
+  font-size: 24px;
+}
+
+.cards>.cards-wrapper>.second-card>.second-user-info>.user-info-text p:last-child {
+  font-size: 18px;
+}
+
+.cards>.third-card {
+  display: flex;
+  gap: 20px;
+  margin-top: 50px;
+}
+
+.cards>.third-card>.third-user-photo> .user-photo {
+  width: 280px;
+  border-radius: 22px;
+}
+
+.cards>.third-card>.third-user-text>.stars>img {
+  width: 150px;
+  margin-bottom: -28px;
+}
+
+.cards>.third-card>.third-user-text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 29vw;
+  background-color: black;
+  color: white;
+  padding-left: 36px;
+  margin-left: -7px;
+  border-radius: 22px;
+}
+
+.cards>.third-card>.third-user-text>p:nth-child(2) {
+  font-size: 34px;
+}
+
+.cards>.third-card>.third-user-text>span {
+  font-size: 18px;
+  color: rgb(63, 62, 62);
 }
