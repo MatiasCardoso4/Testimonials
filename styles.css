@@ -240,13 +240,18 @@ body {
 }
 
 .carousel .left-arrow,.carousel .right-arrow {
-  font-size: 24px;
   cursor: pointer;
   border: none;
 }
 
+.carousel .left-arrow img,.carousel .right-arrow img {
+  width: 20px;
+  height: 20px;
+} 
+
 .carousel .left-arrow {
   margin-right: 20px;
+ 
 }
 
 .carousel .right-arrow {

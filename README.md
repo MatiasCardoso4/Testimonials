@@ -1,4 +1,4 @@
-# Personal Portfolio
+# Testimonials
 
 Este es un proyecto que muestra algunos testimonios de desarrolladores sobre roadmap.sh
 
@@ -32,3 +32,6 @@ Primero, clona el repositorio en tu máquina local utilizando Git:
 ```bash
 git clone https://github.com/MatiasCardoso4/Testimonials
 ```
+
+![]('./project-images/Captura.PNG)
+![]('./project-images/Captura-2.PNG)
