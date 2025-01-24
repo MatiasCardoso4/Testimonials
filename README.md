@@ -34,5 +34,5 @@ git clone https://github.com/MatiasCardoso4/Testimonials
 ```
 # Images 
 
-![Web Image]('./project-images/Captura.PNG')
-![Web Image]('./project-images/Captura-2.PNG')
+![Web Image](./project-images/Captura.PNG)
+![Web Image](./project-images/Captura-2.PNG)
